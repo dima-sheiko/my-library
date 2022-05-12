@@ -12,11 +12,11 @@
 
 body {
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background: rgb(238, 174, 202);
     background: linear-gradient(
@@ -87,11 +87,11 @@ h3 {
 }
 
 .books-grid {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 40px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px;
 }
 
 /* JS Generated */
@@ -171,3 +171,4 @@ input::-webkit-inner-spin-button {
     transform: scale(1.03);
     transition: 0.3s transform ease-in-out;
 }
+
