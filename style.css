@@ -163,9 +163,11 @@ input::-webkit-inner-spin-button {
 }
 
 .add-btn:hover,
-#removeBtn:hover {
+.remove-btn:hover {
     background-color: #e0a2bd;
 }
 
-/* Harry Potter and the Chamber of Secrets
-J. K. Rowling */
+.book:hover {
+    transform: scale(1.03);
+    transition: 0.3s transform ease-in-out;
+}
