@@ -88,8 +88,10 @@ h3 {
 
 .books-grid {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     gap: 40px;
     margin: 40px;
 }
