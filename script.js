@@ -69,6 +69,11 @@ function createBook(item) {
         isReadDiv.textContent = "✘"
         isReadDiv.style.backgroundColor = "#F1948A";
     }
+    isReadDiv.addEventListener("click", () => {
+        item.isRead = !item.isRead; 
+        updateLocalStorage(); 
+        renderBooks();
+    })
     
     removeBtn.textContent = "Remove";
     removeBtn.classList.add("remove-btn");
